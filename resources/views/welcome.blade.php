@@ -22,7 +22,7 @@
                         < / >
                     </span>
                     <span class="font-medium">
-                        برنامه نویسی وب با مهدی ملکی
+                        وب سایت شخصی مهدی ملکی
                     </span>
                 </div>
                 <div class="flex gap-2">
