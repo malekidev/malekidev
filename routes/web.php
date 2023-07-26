@@ -19,3 +19,6 @@ Route::get('/', function () {
 });
 Route::get('/login', [TestController::class,'test'])->name('login');
 Route::get('/register', [TestController::class,'test'])->name('register');
+Route::get('/test', function (){
+    \App\Models\User::find(1)->notify(new \App\Notifications\UserRegisteredNotification());
+});
