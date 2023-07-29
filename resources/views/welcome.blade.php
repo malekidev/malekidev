@@ -17,15 +17,15 @@
                 </span>
             </div>
             <div class="flex justify-between items-center p-5 w-[100%] md:w-[80%] ">
-                <div class="md:text-2xl text-xl flex items-center text-indigo-950">
-                    <span class=" md:text-3xl text-2xl font-extrabold mx-2">
+                <div class="md:text-2xl sm:text-xl text-lg flex items-center text-indigo-950">
+                    <span class="md:text-3xl sm:text-2xl text-lg font-extrabold mx-2">
                         < / >
                     </span>
                     <span class="font-medium">
                         وب سایت شخصی مهدی ملکی
                     </span>
                 </div>
-                <div class="flex gap-2">
+                <div class="flex gap-2 md:text-lg text-sm">
                     <a href="{{route('login')}}" class="bg-indigo-950 text-white rounded p-2">ورود</a>
                     <a href="{{route('register')}} " class="bg-indigo-300 text-indigo-950 rounded p-2">ثبت نام</a>
                 </div>
