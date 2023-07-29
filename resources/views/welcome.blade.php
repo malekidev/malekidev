@@ -25,7 +25,7 @@
                         وب سایت شخصی مهدی ملکی
                     </span>
                 </div>
-                <div class="flex gap-2 md:text-lg text-sm">
+                <div class="flex gap-2 md:text-base text-sm">
                     <a href="{{route('login')}}" class="bg-indigo-950 text-white rounded p-2">ورود</a>
                     <a href="{{route('register')}} " class="bg-indigo-300 text-indigo-950 rounded p-2">ثبت نام</a>
                 </div>
