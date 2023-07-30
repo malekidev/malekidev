@@ -9,14 +9,14 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 
-class UserVerifyCodeSend extends Notification
+class UserVerifyCodeSend extends Notification implements ShouldQueue
 {
     use Queueable;
 
     /**
      * Create a new notification instance.
      */
-    public function __construct(protected Code $code)
+    public function __construct(protected String $code)
     {
         //
     }

@@ -3,6 +3,7 @@
 namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
+use App\Notifications\UserVerifyCodeSend;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -20,6 +21,7 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'phone',
         'password',
     ];
 
@@ -42,4 +44,28 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+    public function Code(): \Illuminate\Database\Eloquent\Relations\HasOne
+    {
+        return $this->hasOne(Code::class);
+    }
+    public function sendVerify(): void
+    {
+        if (! $this->isUserVerified()){
+            $this->Code()->delete();
+            $code = rand(10000,99999);
+            $this->Code()->create([
+                'code' => $code
+            ]);
+            $this->notify(new UserVerifyCodeSend($code));
+        }
+    }
+    public function verify(){
+        return $this->forceFill([
+            'phone_verified_at' => $this->freshTimestamp()
+        ])->save();
+    }
+    public function isUserVerified(): bool
+    {
+        return $this->phone_verified_at !== null;
+    }
 }

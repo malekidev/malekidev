@@ -167,6 +167,7 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+
     ],
 
     /*
@@ -185,6 +186,7 @@ return [
         'phone' => 'شماره همراه',
         'email' => 'ایمیل',
         'password' => 'رمزعبور',
+        'otp' => 'کد تایید'
     ],
 
 ];

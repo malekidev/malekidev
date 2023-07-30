@@ -25,12 +25,25 @@
                         وب سایت شخصی مهدی ملکی
                     </span>
             </div>
-            <div class="flex gap-2 md:text-base text-xs">
-                <a href="{{route('login')}}" class="bg-indigo-950 text-white rounded p-2">ورود</a>
-                <a href="{{route('register')}} " class="bg-indigo-300 text-indigo-950 rounded p-2">ثبت نام</a>
-            </div>
+            @guest()
+                <div class="flex gap-2 md:text-base text-xs">
+                    <a href="{{route('login')}}" class="bg-indigo-950 text-white rounded p-2">ورود</a>
+                    <a href="{{route('register')}} " class="bg-indigo-300 text-indigo-950 rounded p-2">ثبت نام</a>
+                </div>
+            @endguest
+
         </div>
     </header>
+    @if(session('shouldVerify'))
+        <div class="w-full bg-red-500 p-4 flex justify-center">
+            <span class="text-white text-xl">
+                برای استفاده از تمام امکانات باید شماره تلفن خودتون رو
+                <a href="{{route('verify-phone.show')}}" class="text-gray-800">تایید</a>
+                کنید
+            </span>
+
+        </div>
+    @endif
     @yield('content')
 </div>
 </body>

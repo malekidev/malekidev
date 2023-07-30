@@ -19,8 +19,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/login', [TestController::class,'test'])->name('login');
-Route::get('/register', [AuthController::class,'registerShow'])->name('register');
-Route::get('/verify-phone', [AuthController::class,'verifyShow'])->name('verify-phone.show');
+Route::get('/logout', [AuthController::class,'logout'])->name('logout');
+Route::get('/register', [AuthController::class,'registerShow'])->name('register')->middleware('guest');
+Route::get('/verify-phone', [AuthController::class,'verifyShow'])->name('verify-phone.show')->middleware('auth');
+Route::post('/verify-phone', [AuthController::class,'verify'])->name('verify-phone.post');
+Route::post('/send-verify-code', [AuthController::class,'sendVerify'])->name('verify-phone.send');
 Route::post('/register', [AuthController::class,'register'])->name('register.post');
 Route::get('/test', function (){
     \App\Models\User::find(1)->notify(new \App\Notifications\UserRegisteredNotification());
