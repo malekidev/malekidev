@@ -29,6 +29,7 @@ const PhoneValues = ref(props.phone.split(''));
 const phoneNumber = ref(props.phone)
 
 function handleEnter(e, i) {
+    e.preventDefault();
     const nums = box.value.children
     const keyPressed = e.key
     if (i > 0 && keyPressed === 'Backspace' && PhoneValues.value[i] === null ) {
