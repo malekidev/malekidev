@@ -1,36 +1,41 @@
-<!doctype html>
-<html lang="en" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome Page</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body>
-    <div id="app" >
-        <header class="flex items-center flex-col shadow">
-            <div class="p-3 bg-indigo-950 text-white flex justify-center w-full">
-                <span>
-                    تخفیف ویژه دوره آموزش برنامه نویسی :>
-                </span>
+@extends('layouts.main')
+@section('title','صفحه اصلی')
+@section('content')
+    <div class="mx-6 my-12 flex flex-col items-center gap-4">
+            <h1 class="font-extrabold text-xl text-indigo-950">ثبت نام در وب سایت</h1>
+            <div class="shadow rounded p-4 md:w-1/3 w-full">
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                <form action="{{route('register.post')}}" method="post">
+                    @csrf
+
+                    <div class="flex flex-col my-4">
+                        <x-inputs.label>نام و نام خانوادگی :</x-inputs.label>
+                        <x-inputs.text name="name"/>
+                    </div>
+                    <div class="flex flex-col my-4">
+                        <x-inputs.label>شماره همراه :</x-inputs.label>
+                        <phone-input phone="{{old('phone')}}"></phone-input>
+                    </div>
+                    <div class="flex flex-col my-4">
+                        <x-inputs.label>ایمیل :</x-inputs.label>
+                        <x-inputs.text name="email" dir="ltr"/>
+                    </div>
+                    <div class="flex flex-col my-4">
+                        <x-inputs.label>رمز عبور :</x-inputs.label>
+                        <x-inputs.text name="password" dir="ltr"/>
+                    </div>
+                    <button type="submit" class="bg-indigo-300 text-indigo-950 p-2 rounded w-full my-4">
+                        ثبت نام
+                    </button>
+                </form>
             </div>
-            <div class="flex justify-between items-center p-5 w-[100%] md:w-[80%] ">
-                <div class="md:text-2xl sm:text-xl text-lg flex items-center text-indigo-950">
-                    <span class="md:text-3xl sm:text-2xl text-lg font-extrabold mx-2">
-                        < / >
-                    </span>
-                    <span class="font-medium">
-                        وب سایت شخصی مهدی ملکی
-                    </span>
-                </div>
-                <div class="flex gap-2 md:text-base text-sm">
-                    <a href="{{route('login')}}" class="bg-indigo-950 text-white rounded p-2">ورود</a>
-                    <a href="{{route('register')}} " class="bg-indigo-300 text-indigo-950 rounded p-2">ثبت نام</a>
-                </div>
-            </div>
-        </header>
     </div>
-</body>
-</html>
+@endsection

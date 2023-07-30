@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +20,7 @@ Route::get('/', function () {
 });
 Route::get('/login', [TestController::class,'test'])->name('login');
 Route::get('/register', [TestController::class,'test'])->name('register');
+Route::post('/register', [AuthController::class,'register'])->name('register.post');
 Route::get('/test', function (){
     \App\Models\User::find(1)->notify(new \App\Notifications\UserRegisteredNotification());
 });
