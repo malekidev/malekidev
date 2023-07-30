@@ -1,7 +1,7 @@
 <template>
     <input v-model="phoneNumber" type="text" name="phone" class="hidden">
     <div ref="box" class="flex justify-center gap-1 p-1" dir="ltr">
-        <input v-for="i in length" :key="i" type="text" maxlength="1"
+        <input v-for="i in length" :key="i" type="text" maxlength="1" pattern="\d*"
                class="border-b
                 border-gray-600
                 sm:w-9 w-6 p-2
