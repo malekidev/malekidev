@@ -6,7 +6,7 @@
                 border-gray-600
                 sm:w-9 w-6 p-2
                 text-center  focus:outline-0 focus:border-b-2"
-               @keyup="(e) => handleEnter(e,i-1)"
+               @keydown="(e) => handleEnter(e,i-1)"
                v-model="PhoneValues[i-1]"
         >
     </div>
