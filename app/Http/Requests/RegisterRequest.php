@@ -28,4 +28,10 @@ class RegisterRequest extends FormRequest
             'password' => 'required'
         ];
     }
+    protected function passedValidation(): void
+    {
+        $this->merge([
+            'password' => \Hash::make($this->password)
+        ]);
+    }
 }
