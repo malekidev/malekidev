@@ -22,7 +22,24 @@ class AuthController extends Controller
         $user->sendVerify();
         return redirect()->route('verify-phone.show');
     }
+    public function loginShow(){
+        return view('pages.auth.login');
+    }
+    public function login(Request $request){
+        $validated = $request->validate([
+            'phone' => 'required|size:11',
+            'password' => 'required'
+        ]);
 
+        if(Auth::attempt($validated)){
+            $request->session()->regenerate();
+            return redirect()->intended();
+        }
+        return back()->withErrors([
+            'phone' => 'اطلاعات ورود صحیح نمی باشد'
+        ])->onlyInput('phone');
+
+    }
     public function verifyShow()
     {
 

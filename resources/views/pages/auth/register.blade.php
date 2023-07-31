@@ -29,7 +29,7 @@
                 </div>
                 <div class="flex flex-col my-4">
                     <x-inputs.label>رمز عبور :</x-inputs.label>
-                    <x-inputs.text name="password" dir="ltr"/>
+                    <x-inputs.text name="password" type="password" dir="ltr"/>
                     @error('password')
                     <span class="text-red-600 my-2 mr-1">{{$message}} </span>
                     @enderror
