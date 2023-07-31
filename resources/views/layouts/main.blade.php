@@ -31,7 +31,11 @@
                     <a href="{{route('register')}} " class="bg-indigo-300 text-indigo-950 rounded p-2">ثبت نام</a>
                 </div>
             @endguest
-
+            @auth()
+                <div class="flex gap-2 md:text-base text-xs">
+                    <a href="{{route('logout')}}" class="bg-red-950 text-white rounded p-2">خروج</a>
+                </div>
+            @endauth
         </div>
     </header>
     @if(session('shouldVerify'))

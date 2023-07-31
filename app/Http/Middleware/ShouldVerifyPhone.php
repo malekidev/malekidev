@@ -16,7 +16,7 @@ class ShouldVerifyPhone
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if (! $request->user()->isUserVerified()){
+        if ($request->user() && ! $request->user()->isUserVerified()){
             session()->flash('shouldVerify');
         }
         return $next($request);
