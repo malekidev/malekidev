@@ -29,6 +29,6 @@ Route::post('/send-verify-code', [AuthController::class,'sendVerify'])->name('ve
 
 Route::get('/test', function (){
 //     \App\Models\User::find(1)->refreshPermissions('add-user');
-    dd(\App\Models\User::find(1)->hasPermission(\App\Models\Permission::find(1)));
+    dd(\App\Models\User::find(1)->can('add'));
 
 });
