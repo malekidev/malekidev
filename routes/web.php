@@ -2,7 +2,6 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\TestController;
-use App\Models\Mahdi;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -30,10 +29,6 @@ Route::post('/send-verify-code', [AuthController::class,'sendVerify'])->name('ve
 
 Route::get('/test', function (){
 //     \App\Models\User::find(1)->refreshPermissions('add-user');
-    try {
-        dump(Mahdi::all());
-    }catch (Exception $exception){
-
-    }
+    dd(\App\Models\User::find(1)->can('add-post'));
 
 });
