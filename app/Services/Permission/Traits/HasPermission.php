@@ -49,8 +49,16 @@ trait HasPermission
     public function hasPermission(Permission $permission)
     {
 
-        return $this->permissions->contains($permission);
+        return $this->hasPermissionThrowRoles($permission) || $this->permissions->contains($permission);
 
+    }
+
+    public function hasPermissionThrowRoles(Permission $permission)
+    {
+        foreach ($permission->roles as $role){
+            if ($this->hasRole($role)) return true;
+        }
+        return false;
     }
 
     public function getAllPermissions($permissions)
