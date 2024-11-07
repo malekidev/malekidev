@@ -1,33 +1,33 @@
-# 👋 سلام! من مهدی ملکی هستم
+# 👋 Hi! I'm Mahdi Maleki
 
-### 🚀 درباره من
-- 👨‍💻 فریلنسر حرفه‌ای در زمینه توسعه وب و اپلیکیشن
-- 🧑‍🏫 استاد درس PHP و راهنمای دانشجویانم در تمرینات PHP
-- 💼 توسعه‌دهنده با تجربه در کار با WordPress و افزونه‌ها، Laravel، Next.js و React Native
-- 📱 ساخت و توسعه اپلیکیشن‌های واکنش‌گرا و موقعیت‌محور با React Native
-- 💡 تسلط بر ایجاد و مدیریت سیستم‌های پیچیده و مدیریت سرورها
+### 🚀 About Me
+- 👨‍💻 A professional freelancer in web and application development
+- 🧑‍🏫 PHP instructor, guiding my students through PHP assignments
+- 💼 Experienced developer with WordPress, custom plugins, Laravel, Next.js, and React Native
+- 📱 Skilled in creating responsive, location-based applications with React Native
+- 💡 Proficient in building and managing complex systems and server administration
 
-### 🌟 مهارت‌ها و فناوری‌ها
+### 🌟 Skills & Technologies
 - **Frontend**: Next.js, React, Tailwind CSS, jQuery
 - **Backend**: PHP, Laravel, Node.js
-- **WordPress**: طراحی قالب‌ها، ساخت و مدیریت المان‌های المنتور، پیاده‌سازی فهرست‌های دو‌زبانه با Polylang، توسعه افزونه‌ها و قابلیت‌های پیشرفته برای ووکامرس
+- **WordPress**: Theme design, custom Elementor widgets, Polylang multilingual navigation, advanced WooCommerce features
 - **Database**: MySQL, MongoDB
 - **APIs & Realtime**: Pusher, Push Notifications, RESTful APIs
-- **Tools & DevOps**: لینوکس سرور، ساخت و مدیریت سرورها، CDNs، و پلتفرم‌های زمان‌بندی وظایف
+- **Tools & DevOps**: Linux server management, CDNs, and task scheduling platforms
 
-### 📈 پروژه‌های من
-1. **Task Scheduler**: سیستم زمان‌بندی وظایف برای مدیریت وظایف  
-2. **سیستم مدیریت سرور و وب‌سایت**: یک پنل حرفه‌ای مدیریت سرورها و دامنه‌ها با Laravel، با امکان مدیریت وب‌سرور و دیتابیس
-3. **سیستم لاگین با موبایل**: پروژه‌ی لاگین با موبایل با استفاده از Next.js و Laravel
-4. **پروژه‌های ردیابی زنده**: نمایش و ردیابی زنده موقعیت کاربران در نقشه با استفاده از React Native و Laravel
+### 📈 My Projects
+1. **Task Scheduler**: A task scheduling system for task management
+2. **Server and Website Management System**: A professional panel for managing servers and domains with Laravel, including web server and database management
+3. **Mobile Login System**: A mobile login system using Next.js and Laravel
+4. **Live Tracking Projects**: Real-time user location tracking on a map using React Native and Laravel
 
-### 💬 در مورد من بیشتر بدانید!
-- عاشق یادگیری و کاوش در ابزارها و تکنولوژی‌های جدید هستم
-- به سفارشی‌سازی رابط‌های کاربری علاقه دارم و همیشه دنبال راه‌هایی هستم تا تجربه کاربری بهتری برای مشتریانم فراهم کنم
-- دوست دارم پروژه‌های جدیدی که شامل چالش‌های برنامه‌نویسی هستند را به عهده بگیرم و خلاقیتم را به کار ببرم
-- عاشق توام که منو دنبال میکنی❤️
+### 💬 More About Me!
+- Passionate about learning and exploring new tools and technologies
+- I enjoy customizing user interfaces to deliver a better user experience for my clients
+- I love taking on new projects with coding challenges and using my creativity
+- And I love that you're following me ❤️
 
 ---
 
-### 📫 با من در تماس باشید
-[تلگرام](https://t.me/mahdi888pv) | [گیت‌هاب](https://github.com/malekidev)
+### 📫 Connect with Me
+[Telegram](https://t.me/mahdi888pv) | [GitHub](https://github.com/malekidev)
