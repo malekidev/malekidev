@@ -33,7 +33,7 @@ Focused on building reliable, scalable, and user‑centric experiences with Word
 ---
 
 ### 📫 How to Reach Me
-[![Telegram](https://img.shields.io/badge/Telegram-%40Mehdi-blue?style=flat&logo=telegram)](https://t.me/mahdi888pv)  
+[![Telegram](https://img.shields.io/badge/Telegram-%40Mahdi888pv-blue?style=flat&logo=telegram)](https://t.me/mahdi888pv)  
 📧 Email: [sirmahdimaleki@gmail.com](mailto:sirmahdimaleki@gmail.com)
 
 ---
