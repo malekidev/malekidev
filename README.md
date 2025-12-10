@@ -1,33 +1,41 @@
-# 👋 Hi! I'm Mahdi Maleki
+# 👋 Hi, I'm Mehdi!
 
-### 🚀 About Me
-- 👨‍💻 A professional freelancer in web and application development
-- 🧑‍🏫 PHP instructor, guiding my students through PHP assignments
-- 💼 Experienced developer with WordPress, custom plugins, Laravel, Next.js, and React Native
-- 📱 Skilled in creating responsive, location-based applications with React Native
-- 💡 Proficient in building and managing complex systems and server administration
-
-### 🌟 Skills & Technologies
-- **Frontend**: Next.js, React, Tailwind CSS, jQuery
-- **Backend**: PHP, Laravel, Node.js
-- **WordPress**: Theme design, custom Elementor widgets, Polylang multilingual navigation, advanced WooCommerce features
-- **Database**: MySQL, MongoDB
-- **APIs & Realtime**: Pusher, Push Notifications, RESTful APIs
-- **Tools & DevOps**: Linux server management, CDNs, and task scheduling platforms
-
-### 📈 My Projects
-1. **Task Scheduler**: A task scheduling system for task management
-2. **Server and Website Management System**: A professional panel for managing servers and domains with Laravel, including web server and database management
-3. **Mobile Login System**: A mobile login system using Next.js and Laravel
-4. **Live Tracking Projects**: Real-time user location tracking on a map using React Native and Laravel
-
-### 💬 More About Me!
-- Passionate about learning and exploring new tools and technologies
-- I enjoy customizing user interfaces to deliver a better user experience for my clients
-- I love taking on new projects with coding challenges and using my creativity
-- And I love that you're following me ❤️
+### 💻 Backend & WordPress Developer  
+Focused on building reliable, scalable, and user‑centric experiences with WordPress.
 
 ---
 
-### 📫 Connect with Me
-[Telegram](https://t.me/mahdi888pv) | [GitHub](https://github.com/malekidev)
+### 🚀 About Me
+- 🧠 Specialize in creating fast and secure backend structures for WordPress and custom PHP frameworks.  
+- 🎨 Passionate about optimizing **user experience** and UI workflows inside WordPress.  
+- ⚙️ Love writing clean, modular code and turning messy legacy projects into maintainable systems.  
+- 🌱 Currently exploring modern approaches like **REST APIs**, **WP-CLI automation**, and **block-based themes**.
+
+---
+
+### 🛠 Tech Stack
+**Languages & Tools:**  
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)
+![WordPress](https://img.shields.io/badge/WordPress-21759B?style=flat&logo=wordpress&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+
+---
+
+### 🧩 What I’m Working On
+- 🛠 Custom plugin architectures for enterprise WordPress projects  
+- 🧰 API-based connections between WordPress and external services  
+- ⚡ Improving caching, database query performance, and UX in dashboards  
+
+---
+
+### 📫 How to Reach Me
+[![Telegram](https://img.shields.io/badge/Telegram-%40Mehdi-blue?style=flat&logo=telegram)](https://t.me/yourusername)  
+📧 Email: [your.email@example.com](mailto:your.email@example.com)
+
+---
+
+> “Code your ideas, simplify your UX, and let WordPress feel modern again.” – Mehdi
